@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        * {padding: 0; margin: 0;}
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-auto-rows: minmax(100px, auto);
+            grid-gap: 1em;
+            justify-items: stretch;
+            align-items: end;
+
+        }
+
+        .wrapper > div{
+            padding: 1em;
+            background-color: #e7a158;
+        }
+
+        .wrapper > div.light {
+            padding: 1em;
+            background-color: #f4c3a0;
+        }
+
+        .box1 {
+            align-self: start;
+            justify-self: end;
+            grid-column: 1/3;
+            grid-row: 1/3;
+        }
+
+        .box2 {
+            align-self: end;
+            grid-column: 3;
+            grid-row: 1/3;
+        }
+
+        .box3 {
+            justify-self: center;
+            grid-column: 2/4;
+            grid-row: 3;
+        }
+
+        .box4 {
+            grid-column: 1;
+            grid-row: 2/4;
+        }
+
+        /*.wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /*3fr 2fr 1fr
+            grid-gap: 1em;
+        
+            /*grid-template-columns: 70% 30%;
+            grid-column-gap: 1em;
+            grid-row-gap: 1em; 
+
+            grid-gap: 1em;
+
+            grid-auto-rows: minmax(100px, auto);
+        }
+
+        .included {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1em;
+            grid-auto-rows: 80px;
+        }
+
+        .wrapper > div{
+            padding: 1em;
+            background-color: blue;
+        }
+
+        .wrapper > div.light {
+            padding: 1em;
+            background-color: rgb(50, 207, 207);
+        }*/
+
+    </style>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box box1">Box 1</div>
+        <div class="box box2 light">Box 2</div>
+        <div class="box box3">Box3</div>
+        <div class="box box4 light">Box 4</div>
+        <div class="box box5">Box 5</div>
+        <div class="box box6 light">Box 6</div>
+
+
+
+
+        <!--<div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nam, saepe dolore molestias enim repudiandae velit illo.
+        </div>
+        <div class="light">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        </div>
+        <div>
+            <div class="included">
+                <div>Lorem ipsum</div>
+                <div>Lorem ipsum</div>
+                <div>Lorem ipsum</div>
+                <div>Lorem i[sum</div>
+            </div>
+        </div>
+        <div class="light">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur esse porro possimus! Officia deserunt maiores atque, hic quod dignissimos ratione odio molestiae eveniet odit nostrum voluptate sequi nesciunt? Quae possimus, repudiandae aliquid ex ea dignissimos deserunt recusandae non odit. Ullam officia molestias assumenda et accusantium dolore nostrum, iusto nulla perferendis ut hic ipsa eum consectetur qui illo, odit deleniti sunt. Ratione provident excepturi, blanditiis enim amet pariatur eaque repudiandae repellendus voluptatibus ducimus dolores ut molestiae commodi a sequi aperiam est. Nemo, perferendis quibusdam illo repudiandae nihil aliquam, sapiente sequi eveniet laborum error odit dolorem harum esse? Itaque et aliquid maxime.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nam, saepe dolore molestias enim repudiandae velit illo.
+        </div>
+        <div class="light">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        </div>
+        <div class="light">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        </div> -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+* {
+    padding: auto;
+    margin: auto;
+    outline-color: red;
+}
+
+article > div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#left{
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 100px;
+    width: 50%;
+    background-color:chocolate;
+    float: left;
+    margin-right: 20px;
+    padding: 10px;
+    color: yellow;
+    border: 3px solid silver;
+    display: inline;
+    font-size: 20px;
+    font-family: 'Times New Roman';
+    max-width: 400px;
+    opacity: 0.3;
+    text-align: center;
+
+    /*cursor: grab;*/
+}
+
+#right{
+    height: 100px;
+    width: 30%;
+    background-color:chocolate;
+    float: left;
+    margin-right: 20px;
+    padding: 10px;
+    color: yellow;
+    border: 3px solid silver;
+    display: inline;
+    font-size: 20px;
+    font-family: 'Times New Roman';
+    max-width: 400px;
+    opacity: 0.3;
+    text-align: center;
+
+    /*cursor: grab;*/
+}
+
+ul > li {
+    display: none;
+    visibility: hidden;
+}
